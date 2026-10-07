@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Kavana | Creative Technologist & Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Kavana, a Creative Technologist and Software Engineer specializing in distributed architectures, cloud services, and boundary-pushing interactive technology.">
+  <meta name="keywords"
+    content="Kavana, Creative Technologist, Software Engineer, Full Stack, Systems Architecture, Distributed Systems, Interactive Tech">
+  <meta name="author" content="Kavana">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Kavana | Creative Technologist & Software Engineer">
+  <meta property="og:description"
+    content="Exploring the intersection of scalable systems architecture, creative computation, and modern interactive engineering.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Space Grotesk + Inter + JetBrains Mono + Press Start 2P + Silkscreen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ======================================================== -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDEBAR)                   -->
+  <!-- Fixed left vertical navbar with pixel art aesthetic cues -->
+  <!-- Accessible, responsive, and includes all 8 links         -->
+  <!-- ======================================================== -->
+  <aside class="vertical-sidebar" id="vertical-sidebar" aria-label="Main Sidebar Navigation">
+    <div class="sidebar-inner">
+
+      <!-- Sidebar Brand / Player Profile -->
+      <div class="sidebar-brand-box">
+        <a href="#hero" class="sidebar-brand" aria-label="Kavana Homepage">
+          <span class="pixel-avatar-frame-mini" aria-hidden="true">
+            <img src="p kavana - Copy (5).jpeg" alt="Kavana Avatar" class="mini-avatar-img">
+            <span class="avatar-status-pip"></span>
+          </span>
+          <div class="brand-text-group">
+            <span class="sidebar-name">KAVANA</span>
+            <span class="sidebar-role-badge">LVL 99 DEV</span>
+          </div>
+        </a>
+        <!-- Close button for mobile drawer -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" type="button" aria-label="Close navigation sidebar">
+          &times;
+        </button>
+      </div>
+
+      <!-- XP Progress Bar (Gamified Status Widget) -->
+      <div class="sidebar-xp-bar" aria-hidden="true">
+        <div class="xp-label-row">
+          <span class="xp-label">EXP</span>
+          <span class="xp-value">7,840 / 10,000</span>
+        </div>
+        <div class="xp-track">
+          <div class="xp-fill" style="--xp-fill: 78%;"></div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu: 8 Required Links -->
+      <nav class="sidebar-nav" aria-label="Primary Navigation">
+        <span class="sidebar-nav-label" aria-hidden="true">Navigation</span>
+        <ul class="sidebar-menu" role="menu">
+
+          <li class="menu-item" role="none">
+            <a href="#hero" class="sidebar-link active" data-section="hero" role="menuitem" aria-current="page">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Retro Home Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </span>
+              <span class="link-label">Home</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#about" class="sidebar-link" data-section="about" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- About Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </span>
+              <span class="link-label">About Me</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#skills" class="sidebar-link" data-section="skills" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Skills Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </span>
+              <span class="link-label">Skills</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#timeline" class="sidebar-link" data-section="timeline" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Timeline Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <span class="link-label">Timeline</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#projects" class="sidebar-link" data-section="projects" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Projects Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </span>
+              <span class="link-label">Projects</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#testimonials" class="sidebar-link" data-section="testimonials" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Testimonials Star Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </span>
+              <span class="link-label">Testimonials</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- Visual divider before utility links -->
+          <li class="sidebar-menu-divider" role="separator" aria-hidden="true"></li>
+
+          <li class="menu-item" role="none">
+            <a href="#chat" class="sidebar-link" data-section="chat" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Chat Dialogue Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </span>
+              <span class="link-label">Chat</span>
+              <span class="sidebar-badge-pulse">LIVE</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <li class="menu-item" role="none">
+            <a href="#contact" class="sidebar-link" data-section="contact" role="menuitem">
+              <span class="pixel-nav-icon" aria-hidden="true">
+                <!-- Contact Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <span class="link-label">Contact</span>
+              <span class="pixel-pointer" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Sidebar Bottom Dock: Night Mode Toggle & Status -->
+      <div class="sidebar-bottom-dock">
+        <div class="sidebar-quest-status">
+          <span class="pixel-live-dot" aria-hidden="true"></span>
+          <span class="quest-text">ONLINE &bull; READY</span>
+        </div>
+
+        <button id="sidebar-theme-toggle" class="sidebar-theme-toggle-btn" type="button" aria-label="Toggle Night Mode"
+          title="Toggle Day / Night Mode">
+          <span class="theme-icon-frame">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-text-label">TOGGLE THEME</span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Mobile Backdrop Overlay when sidebar is open on smaller screens -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Top Bar for small screens -->
+  <header class="mobile-top-bar" id="mobile-top-bar">
+    <button id="mobile-sidebar-toggle" class="mobile-hamburger-btn" type="button" aria-label="Open navigation sidebar"
+      aria-expanded="false" aria-controls="vertical-sidebar">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <a href="#hero" class="mobile-brand-title">KAVANA</a>
+    <button id="theme-toggle" class="theme-toggle-btn mobile-theme-btn" type="button" aria-label="Toggle Night Mode"
+      title="Toggle Night / Light Mode">
+      <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- MAIN CONTENT AREA                                        -->
+  <!-- ======================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================== -->
+    <!-- HERO SECTION (CREATIVE TECH THEME)                     -->
+    <!-- Welcoming title & tagline, provided ambient background,-->
+    <!-- interactive glass card with portrait, & media query toggle -->
+    <!-- ====================================================== -->
+    <section id="hero" class="hero-section creative-hero" aria-labelledby="hero-title">
+
+      <!-- Provided Background Image Container with Ambient Chromatic Mesh -->
+      <div class="hero-ambient-bg" aria-hidden="true">
+        <div class="ambient-glow-orb glow-1"></div>
+        <div class="ambient-glow-orb glow-2"></div>
+      </div>
+
+      <div class="container hero-container creative-hero-container">
+
+        <!-- Left Column: Content & Welcoming Greetings -->
+        <div class="hero-content creative-hero-content">
+
+          <!-- Modern Creative Tech Status Badge -->
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span class="status-text">Creative Technologist &bull; Available for 2026 Projects</span>
+          </div>
+
+          <!-- Welcoming Title -->
+          <h1 id="hero-title" class="hero-title creative-title">
+            Engineering where <span class="gradient-text">logic meets imagination.</span><br>
+            Hi, I'm <span class="hero-name-highlight">Kavana</span>.
+          </h1>
+
+          <!-- Brief Tagline -->
+          <p class="hero-description creative-tagline">
+            Software engineer and creative technologist architecting resilient cloud backends,
+            distributed data systems, and intuitive, boundary-pushing interactive experiences.
+          </p>
+
+          <!-- Creative Tech Specialty Chips -->
+          <div class="creative-chips-group" aria-label="Key Competencies">
+            <span class="tech-chip"><span class="chip-dot">✦</span> Distributed Systems</span>
+            <span class="tech-chip"><span class="chip-dot">✦</span> Cloud-Native APIs</span>
+            <span class="tech-chip"><span class="chip-dot">✦</span> Creative Computation</span>
+            <span class="tech-chip"><span class="chip-dot">✦</span> Interactive UI</span>
+          </div>
+
+          <!-- Creative Tech Action Buttons -->
+          <div class="hero-actions creative-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="v kavana.mp4" target="_blank" class="btn btn-outline" title="Watch Intro Video">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+              </svg>
+              <span>Watch Intro</span>
+            </a>
+          </div>
+
+          <!-- Creative Tech Night Mode Controller (CSS Media Query Enabled) -->
+          <div class="hero-theme-dock" aria-label="Theme Controller">
+            <span class="dock-label">Theme Engine:</span>
+            <button id="hero-theme-toggle" class="theme-switch-dock" type="button" aria-label="Toggle Night Mode"
+              title="Toggle Day / Night Mode">
+              <span class="switch-slider"></span>
+              <span class="switch-opt light-opt">☀ Light</span>
+              <span class="switch-opt dark-opt">☾ Night</span>
+            </button>
+            <span class="theme-detected-pill" id="theme-detected-label">Auto (System Default)</span>
+          </div>
+
+          <!-- Creative Tech Social Channels -->
+          <div class="hero-socials creative-socials">
+            <span class="social-label">Network:</span>
+            <ul class="social-list">
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill-link"
+                  aria-label="GitHub Profile">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill-link"
+                  aria-label="LinkedIn Profile">LinkedIn</a></li>
+              <li><a href="mailto:kavana@example.com" class="social-pill-link" aria-label="Email Me">Email</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Creative Tech Glassmorphism Showcase Card with Provided Portrait -->
+        <div class="hero-visual creative-hero-visual">
+          <div class="creative-glass-card">
+
+            <!-- Glass Card Top Bar -->
+            <div class="glass-card-header">
+              <div class="card-status-badge">
+                <span class="status-live-dot"></span>
+                <span>Online &bull; Available</span>
+              </div>
+              <span class="card-code-tag">SYSTEM_READY</span>
+            </div>
+
+            <!-- Provided Portrait Image Container with Ambient Border Glow -->
+            <div class="creative-avatar-container">
+              <img src="p kavana - Copy (5).jpeg" alt="Portrait of Kavana, Software Engineer and Creative Technologist"
+                class="creative-avatar-img">
+              <div class="avatar-gradient-sheen" aria-hidden="true"></div>
+            </div>
+
+            <!-- Creative Tech Spec / Telemetry Panel -->
+            <div class="glass-specs-panel">
+              <div class="spec-row">
+                <span class="spec-label">Domain</span>
+                <span class="spec-value">Software Engineering &amp; Creative Tech</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Focus</span>
+                <span class="spec-value">Scalable Backends &bull; Cloud &bull; UI Architecture</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Uptime</span>
+                <span class="spec-value spec-highlight">99.9% Production Ready</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PLACEHOLDER: ABOUT SECTION                             -->
+    <!-- Background story, core philosophy, and fast stats      -->
+    <!-- ====================================================== -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-subtitle">Background</span>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a software engineer with over 5 years of experience architecting and shipping production
+              applications.
+              My journey began tinkering with kernel configurations and self-hosted Linux servers, which developed into
+              a passion
+              for large-scale systems and elegant APIs.
+            </p>
+            <p>
+              Today, I focus on solving complex challenges around distributed data processing, microservices
+              orchestration,
+              and frontend ergonomics. I believe software engineering is as much about human empathy and maintainability
+              as it is
+              about algorithmic efficiency.
+            </p>
+            <p>
+              Outside of work, you'll find me contributing to open source, writing deep dives on concurrency, or
+              tinkering with
+              embedded hardware.
+            </p>
+          </div>
+
+          <!-- Fast Stats / Quick Highlights Placeholder -->
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">99.9%</span>
+              <span class="stat-label">System Uptime Record</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1.2k+</span>
+              <span class="stat-label">Git Commits / Year</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- SKILLS SECTION: CORE COMPETENCIES MATRIX (PIXEL ART)   -->
+    <!-- Displays software engineering skills with progress bars, -->
+    <!-- pixel art SVG icons, gamified XP levels, and styled     -->
+    <!-- framework/tool lists maintaining retro arcade aesthetic.-->
+    <!-- ====================================================== -->
+    <section id="skills" class="skills-section pixel-skills-wrapper" aria-labelledby="skills-title">
+      <div class="container">
+
+        <!-- Skills Section Header with Arcade Theme Subtitle -->
+        <div class="section-header">
+          <span class="section-subtitle">
+            <span class="pixel-blink-dot" aria-hidden="true"></span>
+            CAPABILITIES MATRIX // LVL 99 DEV
+          </span>
+          <h2 id="skills-title" class="section-title">Core Competencies &amp; Technical Skills</h2>
+          <div class="section-divider pixel-section-divider"></div>
+          <p class="skills-intro-desc">
+            Production-tested engineering competencies across systems architecture, algorithmic efficiency,
+            intelligent machine learning pipelines, and precision frontend design.
+          </p>
+        </div>
+
+        <!-- ==================================================== -->
+        <!-- RETRO GAMIFIED HUD: PLAYER STATS OVERVIEW           -->
+        <!-- Summary telemetries highlighting engineer abilities   -->
+        <!-- ==================================================== -->
+        <div class="skills-hud-panel" aria-label="Skill Matrix Telemetry">
+          <div class="hud-corner hud-tl" aria-hidden="true"></div>
+          <div class="hud-corner hud-tr" aria-hidden="true"></div>
+          <div class="hud-corner hud-bl" aria-hidden="true"></div>
+          <div class="hud-corner hud-br" aria-hidden="true"></div>
+
+          <div class="hud-status-strip">
+            <span class="hud-badge-online">
+              <span class="status-pulse-dot" aria-hidden="true"></span>
+              ALL 8 NODES OPERATIONAL
+            </span>
+            <span class="hud-label-dim">RANK: STAFF / LVL 99</span>
+            <span class="hud-label-dim">SYSTEM: DISTRIBUTED &bull; CLOUD &bull; AI</span>
+          </div>
+
+          <div class="hud-stats-row">
+            <div class="hud-stat-box">
+              <span class="hud-stat-num">8/8</span>
+              <span class="hud-stat-tag">Core Competencies</span>
+            </div>
+            <div class="hud-stat-box">
+              <span class="hud-stat-num">93%</span>
+              <span class="hud-stat-tag">Average Mastery</span>
+            </div>
+            <div class="hud-stat-box">
+              <span class="hud-stat-num">5+ YRS</span>
+              <span class="hud-stat-tag">Production Code</span>
+            </div>
+            <div class="hud-stat-box">
+              <span class="hud-stat-num">PASSIVE</span>
+              <span class="hud-stat-tag">+25% Big-O Efficiency</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================================== -->
+        <!-- INTERACTIVE CATEGORY FILTER CONTROLS (PIXEL TABS)   -->
+        <!-- Quick filtering tabs to explore competencies by area -->
+        <!-- ==================================================== -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Filter skills by competency domain">
+          <button type="button" class="pixel-filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="skills-grid">
+            <span class="filter-tab-bracket">[</span> ALL SKILLS (8) <span class="filter-tab-bracket">]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="languages" role="tab" aria-selected="false" aria-controls="skills-grid">
+            <span class="filter-tab-bracket">[</span> LANGUAGES <span class="filter-tab-bracket">]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="ai-ml" role="tab" aria-selected="false" aria-controls="skills-grid">
+            <span class="filter-tab-bracket">[</span> AI &amp; ML <span class="filter-tab-bracket">]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="core-data" role="tab" aria-selected="false" aria-controls="skills-grid">
+            <span class="filter-tab-bracket">[</span> CORE &amp; DATA <span class="filter-tab-bracket">]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="web-tools" role="tab" aria-selected="false" aria-controls="skills-grid">
+            <span class="filter-tab-bracket">[</span> WEB &amp; TOOLS <span class="filter-tab-bracket">]</span>
+          </button>
+        </div>
+
+        <!-- ==================================================== -->
+        <!-- SKILLS GRID: 8 CORE COMPETENCY CARDS                -->
+        <!-- ==================================================== -->
+        <div class="skills-grid pixel-skills-grid" id="skills-grid" role="region" aria-label="Software engineering skill list">
+
+          <!-- ================================================== -->
+          <!-- SKILL 1: PYTHON                                    -->
+          <!-- Role: Primary language for asynchronous services,  -->
+          <!-- backend data processing, ML scripting, and APIs.   -->
+          <!-- Progress Bar: Represents high-level fluency (96%).  -->
+          <!-- Icon: Pixel art dual-snake representing Python.    -->
+          <!-- List: Key backend and machine learning libraries.  -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="languages" data-skill="python" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">PROGRAMMING LANGUAGE</span>
+              <span class="skill-lvl-badge">LVL 96</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Python: Custom 24x24 SVG with dual pixel serpents -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Python Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Top Blue/Cyan Python Snake -->
+                  <rect x="8" y="3" width="7" height="3" fill="#06b6d4" />
+                  <rect x="6" y="5" width="5" height="5" fill="#06b6d4" />
+                  <rect x="11" y="6" width="5" height="2" fill="#06b6d4" />
+                  <rect x="6" y="9" width="8" height="3" fill="#06b6d4" />
+                  <rect x="11" y="11" width="3" height="3" fill="#06b6d4" />
+                  <!-- Snake 1 Eye -->
+                  <rect x="12" y="4" width="1" height="1" fill="#ffffff" />
+
+                  <!-- Bottom Gold/Amber Python Snake -->
+                  <rect x="9" y="18" width="7" height="3" fill="#f59e0b" />
+                  <rect x="13" y="14" width="5" height="5" fill="#f59e0b" />
+                  <rect x="8" y="16" width="5" height="2" fill="#f59e0b" />
+                  <rect x="10" y="12" width="8" height="3" fill="#f59e0b" />
+                  <rect x="10" y="10" width="3" height="3" fill="#f59e0b" />
+                  <!-- Snake 2 Eye -->
+                  <rect x="11" y="19" width="1" height="1" fill="#ffffff" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Python</h3>
+                <span class="skill-role-caption">Scripting &bull; Backend &bull; Numerical</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Core language for building concurrent asynchronous APIs, scientific computation pipelines,
+              and glue automation across microservices.
+            </p>
+
+            <!-- Progress Bar representing Python mastery (96%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="96">96%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" aria-label="Python Mastery 96%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 96%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of key frameworks, tools, and libraries -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Python ecosystem tools">
+                <li class="pixel-badge-tag">FastAPI</li>
+                <li class="pixel-badge-tag">PyTorch</li>
+                <li class="pixel-badge-tag">NumPy</li>
+                <li class="pixel-badge-tag">Pandas</li>
+                <li class="pixel-badge-tag">Asyncio</li>
+                <li class="pixel-badge-tag">Poetry</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">RUNTIME: CPython 3.12+</span>
+              <span class="footer-spec-rating">RATING: S+</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 2: JAVA                                      -->
+          <!-- Role: Enterprise systems programming, multithreaded-->
+          <!-- services, scalable microservices, and JVM tuning.  -->
+          <!-- Progress Bar: Represents enterprise readiness (90%).-->
+          <!-- Icon: Pixel art steaming coffee mug representing   -->
+          <!-- Java heritage and JVM ecosystem.                   -->
+          <!-- List: Key enterprise frameworks and JVM tools.     -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="languages" data-skill="java" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">ENTERPRISE &amp; SYSTEMS</span>
+              <span class="skill-lvl-badge">LVL 90</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Java: Steaming coffee mug SVG in crisp 24x24 grid -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Java Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Steaming pixel vapors -->
+                  <rect x="7" y="3" width="2" height="2" fill="#f43f5e" />
+                  <rect x="8" y="5" width="2" height="2" fill="#f43f5e" />
+                  <rect x="11" y="2" width="2" height="2" fill="#f59e0b" />
+                  <rect x="12" y="4" width="2" height="2" fill="#f59e0b" />
+                  <rect x="15" y="3" width="2" height="2" fill="#06b6d4" />
+                  <rect x="14" y="5" width="2" height="2" fill="#06b6d4" />
+
+                  <!-- Coffee Mug Body -->
+                  <rect x="5" y="8" width="12" height="9" fill="#818cf8" />
+                  <rect x="6" y="9" width="10" height="2" fill="#4f46e5" />
+                  <!-- Mug Handle -->
+                  <rect x="17" y="9" width="3" height="6" fill="#818cf8" />
+                  <rect x="17" y="11" width="2" height="2" fill="var(--bg-card, #11131d)" />
+                  <!-- Mug Base / Saucer -->
+                  <rect x="7" y="17" width="8" height="1" fill="#4338ca" />
+                  <rect x="4" y="19" width="14" height="2" fill="#312e81" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Java</h3>
+                <span class="skill-role-caption">Enterprise &bull; JVM &bull; Concurrency</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Engineered high-throughput enterprise backends, distributed microservices, and thread-safe concurrent
+              systems tuned for low GC pauses.
+            </p>
+
+            <!-- Progress Bar representing Java mastery (90%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="90">90%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Java Mastery 90%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 90%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of Java frameworks and architecture competencies -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Java ecosystem tools">
+                <li class="pixel-badge-tag">Spring Boot</li>
+                <li class="pixel-badge-tag">JVM Tuning</li>
+                <li class="pixel-badge-tag">Multithreading</li>
+                <li class="pixel-badge-tag">Maven / Gradle</li>
+                <li class="pixel-badge-tag">Hibernate</li>
+                <li class="pixel-badge-tag">JUnit 5</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">JVM: OpenJDK 21 LTS</span>
+              <span class="footer-spec-rating">RATING: S</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 3: MACHINE LEARNING                          -->
+          <!-- Role: Statistical learning models, regression,     -->
+          <!-- classification, feature stores, and predictive     -->
+          <!-- model validation.                                  -->
+          <!-- Progress Bar: Represents applied modeling skill(88%)-->
+          <!-- Icon: Pixel art neural network node matrix graph.  -->
+          <!-- List: Key ML toolsets and modeling frameworks.     -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="ai-ml" data-skill="machine-learning" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">PREDICTIVE MODELING</span>
+              <span class="skill-lvl-badge">LVL 88</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Machine Learning: Multi-layer neural decision network -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Machine Learning Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Synapse connector pixel lines -->
+                  <path d="M5 6h6v1H5zm0 11h6v1H5zm6-5h6v1h-6zm0-5l5 4v1l-5-4zm0 11l5-4v1l-5 4z" fill="#4b5563" opacity="0.6" />
+
+                  <!-- Input Layer Nodes (3 nodes) -->
+                  <rect x="4" y="4" width="3" height="3" fill="#06b6d4" />
+                  <rect x="4" y="10" width="3" height="3" fill="#06b6d4" />
+                  <rect x="4" y="16" width="3" height="3" fill="#06b6d4" />
+
+                  <!-- Hidden Layer Nodes (4 nodes) -->
+                  <rect x="11" y="3" width="3" height="3" fill="#818cf8" />
+                  <rect x="11" y="8" width="3" height="3" fill="#818cf8" />
+                  <rect x="11" y="13" width="3" height="3" fill="#818cf8" />
+                  <rect x="11" y="18" width="3" height="3" fill="#818cf8" />
+
+                  <!-- Output Layer Nodes (2 nodes) -->
+                  <rect x="18" y="7" width="3" height="3" fill="#10b981" />
+                  <rect x="18" y="14" width="3" height="3" fill="#10b981" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Machine Learning</h3>
+                <span class="skill-role-caption">Predictive &bull; Training &bull; Evaluation</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Designing supervised and unsupervised learning algorithms, feature engineering pipelines,
+              and cross-validation regimes that extract actionable predictive intelligence.
+            </p>
+
+            <!-- Progress Bar representing Machine Learning mastery (88%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="88">88%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning Mastery 88%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 88%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of ML frameworks and algorithms -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Machine Learning toolsets">
+                <li class="pixel-badge-tag">Scikit-Learn</li>
+                <li class="pixel-badge-tag">XGBoost</li>
+                <li class="pixel-badge-tag">Regression</li>
+                <li class="pixel-badge-tag">Clustering</li>
+                <li class="pixel-badge-tag">Feature Stores</li>
+                <li class="pixel-badge-tag">Model Metrics</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">METHOD: Supervised / Ensemble</span>
+              <span class="footer-spec-rating">RATING: A+</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 4: ARTIFICIAL INTELLIGENCE                   -->
+          <!-- Role: Deep neural networks, LLMs, transformer      -->
+          <!-- architectures, RAG pipelines, and autonomous agent -->
+          <!-- orchestration.                                     -->
+          <!-- Progress Bar: Represents AI architecture (89%).    -->
+          <!-- Icon: Pixel art cybernetic brain / neural core.    -->
+          <!-- List: Key AI frameworks and generative technologies-->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="ai-ml" data-skill="artificial-intelligence" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">DEEP LEARNING &amp; AGENTS</span>
+              <span class="skill-lvl-badge">LVL 89</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Artificial Intelligence: Cybernetic microprocessor brain -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Artificial Intelligence Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- CPU Outer Pins -->
+                  <rect x="2" y="7" width="2" height="2" fill="#22d3ee" />
+                  <rect x="2" y="11" width="2" height="2" fill="#22d3ee" />
+                  <rect x="2" y="15" width="2" height="2" fill="#22d3ee" />
+                  <rect x="20" y="7" width="2" height="2" fill="#22d3ee" />
+                  <rect x="20" y="11" width="2" height="2" fill="#22d3ee" />
+                  <rect x="20" y="15" width="2" height="2" fill="#22d3ee" />
+                  <rect x="7" y="2" width="2" height="2" fill="#22d3ee" />
+                  <rect x="11" y="2" width="2" height="2" fill="#22d3ee" />
+                  <rect x="15" y="2" width="2" height="2" fill="#22d3ee" />
+                  <rect x="7" y="20" width="2" height="2" fill="#22d3ee" />
+                  <rect x="11" y="20" width="2" height="2" fill="#22d3ee" />
+                  <rect x="15" y="20" width="2" height="2" fill="#22d3ee" />
+
+                  <!-- Processor Frame -->
+                  <rect x="4" y="4" width="16" height="16" fill="#1e1b4b" />
+                  <rect x="6" y="6" width="12" height="12" fill="#312e81" />
+
+                  <!-- Glowing Cyber Brain Matrix -->
+                  <rect x="8" y="8" width="3" height="3" fill="#f43f5e" />
+                  <rect x="13" y="8" width="3" height="3" fill="#f43f5e" />
+                  <rect x="10" y="10" width="4" height="4" fill="#fb7185" />
+                  <rect x="8" y="13" width="3" height="3" fill="#f43f5e" />
+                  <rect x="13" y="13" width="3" height="3" fill="#f43f5e" />
+                  <!-- Center Core Spark -->
+                  <rect x="11" y="11" width="2" height="2" fill="#ffffff" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Artificial Intelligence</h3>
+                <span class="skill-role-caption">Neural Nets &bull; LLMs &bull; Agentic</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Architecting generative AI applications, deep transformer architectures, vector embeddings,
+              retrieval-augmented generation (RAG), and deterministic agent workflows.
+            </p>
+
+            <!-- Progress Bar representing Artificial Intelligence mastery (89%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="89">89%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Artificial Intelligence Mastery 89%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 89%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of AI and deep learning toolsets -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Artificial Intelligence toolsets">
+                <li class="pixel-badge-tag">PyTorch</li>
+                <li class="pixel-badge-tag">Transformers</li>
+                <li class="pixel-badge-tag">LLM APIs</li>
+                <li class="pixel-badge-tag">RAG Architecture</li>
+                <li class="pixel-badge-tag">Vector DBs</li>
+                <li class="pixel-badge-tag">Agentic Loops</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">MODELS: Transformers &bull; Embeddings</span>
+              <span class="footer-spec-rating">RATING: S</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 5: DATA STRUCTURES                           -->
+          <!-- Role: Algorithmic foundation, trees, graphs, maps, -->
+          <!-- dynamic programming, and computational complexity. -->
+          <!-- Progress Bar: Represents algorithmic mastery (95%).-->
+          <!-- Icon: Pixel art binary search tree with nodes.     -->
+          <!-- List: Key data structures & algorithmic paradigms. -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="core-data" data-skill="data-structures" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">ALGORITHMS &amp; COMPLEXITY</span>
+              <span class="skill-lvl-badge">LVL 95</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Data Structures: Hierarchical Binary Search Tree -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Data Structures Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Tree branch connector pixels -->
+                  <path d="M12 7l-5 4v1h1l5-4zm0 0l5 4v1h-1l-5-4z M7 14l-3 4v1h1l3-4zm0 0l3 4v1h-1l-3-4z M17 14l-3 4v1h1l3-4zm0 0l3 4v1h-1l-3-4z" fill="#64748b" />
+
+                  <!-- Root Node -->
+                  <rect x="10" y="3" width="4" height="4" fill="#6366f1" />
+                  <rect x="11" y="4" width="2" height="2" fill="#c7d2fe" />
+
+                  <!-- Child Nodes (Level 1) -->
+                  <rect x="5" y="10" width="4" height="4" fill="#06b6d4" />
+                  <rect x="6" y="11" width="2" height="2" fill="#a5f3fc" />
+
+                  <rect x="15" y="10" width="4" height="4" fill="#06b6d4" />
+                  <rect x="16" y="11" width="2" height="2" fill="#a5f3fc" />
+
+                  <!-- Leaf Nodes (Level 2) -->
+                  <rect x="2" y="18" width="3" height="3" fill="#10b981" />
+                  <rect x="8" y="18" width="3" height="3" fill="#10b981" />
+                  <rect x="13" y="18" width="3" height="3" fill="#10b981" />
+                  <rect x="19" y="18" width="3" height="3" fill="#10b981" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Data Structures</h3>
+                <span class="skill-role-caption">Big-O &bull; Trees &bull; Graph Theory</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              In-depth mastery of optimal memory representation, asymptotic analysis (Big-O), traversal algorithms,
+              and low-latency data access patterns.
+            </p>
+
+            <!-- Progress Bar representing Data Structures mastery (95%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="95">95%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Data Structures Mastery 95%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 95%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of data structures and algorithmic disciplines -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Data Structures competencies">
+                <li class="pixel-badge-tag">Trees &amp; BST</li>
+                <li class="pixel-badge-tag">Graphs &amp; BFS/DFS</li>
+                <li class="pixel-badge-tag">Hash Maps</li>
+                <li class="pixel-badge-tag">Heaps &amp; Queues</li>
+                <li class="pixel-badge-tag">Dynamic Prog.</li>
+                <li class="pixel-badge-tag">Big-O Tuning</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">EFFICIENCY: O(1) &bull; O(log N) Focus</span>
+              <span class="footer-spec-rating">RATING: S+</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 6: SQL                                       -->
+          <!-- Role: Relational databases, schema modeling, ACID  -->
+          <!-- guarantees, complex joins, and query optimization. -->
+          <!-- Progress Bar: Represents relational fluency (92%). -->
+          <!-- Icon: Pixel art cylindrical database disk platter. -->
+          <!-- List: Key database engines and query capabilities. -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="core-data" data-skill="sql" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">RELATIONAL DATA &amp; STORAGE</span>
+              <span class="skill-lvl-badge">LVL 92</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for SQL: 3D Relational Database Cylinder Stack -->
+              <div class="pixel-icon-container" aria-hidden="true" title="SQL Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Top Platter -->
+                  <rect x="5" y="3" width="14" height="4" fill="#3b82f6" />
+                  <rect x="6" y="4" width="12" height="1" fill="#93c5fd" />
+                  <rect x="4" y="4" width="1" height="2" fill="#2563eb" />
+                  <rect x="19" y="4" width="1" height="2" fill="#1d4ed8" />
+
+                  <!-- Middle Platter -->
+                  <rect x="5" y="9" width="14" height="4" fill="#2563eb" />
+                  <rect x="6" y="10" width="12" height="1" fill="#60a5fa" />
+                  <rect x="4" y="10" width="1" height="2" fill="#1d4ed8" />
+                  <rect x="19" y="10" width="1" height="2" fill="#1e40af" />
+
+                  <!-- Bottom Platter -->
+                  <rect x="5" y="15" width="14" height="4" fill="#1d4ed8" />
+                  <rect x="6" y="16" width="12" height="1" fill="#3b82f6" />
+                  <rect x="4" y="16" width="1" height="2" fill="#1e40af" />
+                  <rect x="19" y="16" width="1" height="2" fill="#172554" />
+
+                  <!-- SQL Query Status Indicator Pips -->
+                  <rect x="16" y="5" width="2" height="1" fill="#10b981" />
+                  <rect x="16" y="11" width="2" height="1" fill="#10b981" />
+                  <rect x="16" y="17" width="2" height="1" fill="#10b981" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">SQL</h3>
+                <span class="skill-role-caption">RDBMS &bull; Indexing &bull; ACID</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Designing normalized schemas, writing complex recursive CTEs, profiling EXPLAIN plans,
+              and eliminating slow table scans with tuned compound indexes.
+            </p>
+
+            <!-- Progress Bar representing SQL mastery (92%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="92">92%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="SQL Mastery 92%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 92%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of SQL database capabilities -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="SQL technologies">
+                <li class="pixel-badge-tag">PostgreSQL</li>
+                <li class="pixel-badge-tag">Complex Joins</li>
+                <li class="pixel-badge-tag">B-Tree Indexes</li>
+                <li class="pixel-badge-tag">CTEs &amp; Windows</li>
+                <li class="pixel-badge-tag">Transactions</li>
+                <li class="pixel-badge-tag">Schema Migration</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">COMPLIANCE: Strict ACID</span>
+              <span class="footer-spec-rating">RATING: S</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 7: HTML & CSS                                -->
+          <!-- Role: Semantic markup, responsive design, modern   -->
+          <!-- CSS tokens, Grid/Flexbox, accessibility & styling. -->
+          <!-- Progress Bar: Represents frontend mastery (97%).   -->
+          <!-- Icon: Pixel art code bracket tags & layout frame.  -->
+          <!-- List: Key modern frontend design capabilities.     -->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="web-tools" data-skill="html-css" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">SEMANTIC WEB &amp; UI</span>
+              <span class="skill-lvl-badge">LVL 97</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for HTML & CSS: Retro code tags and pixel layout viewport -->
+              <div class="pixel-icon-container" aria-hidden="true" title="HTML & CSS Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Left Tag < -->
+                  <rect x="5" y="7" width="2" height="2" fill="#f97316" />
+                  <rect x="3" y="9" width="2" height="2" fill="#f97316" />
+                  <rect x="2" y="11" width="2" height="2" fill="#f97316" />
+                  <rect x="3" y="13" width="2" height="2" fill="#f97316" />
+                  <rect x="5" y="15" width="2" height="2" fill="#f97316" />
+
+                  <!-- Center Pixel Screen Canvas -->
+                  <rect x="8" y="5" width="8" height="14" fill="#0284c7" />
+                  <rect x="9" y="6" width="6" height="2" fill="#38bdf8" />
+                  <rect x="9" y="10" width="3" height="4" fill="#ffffff" />
+                  <rect x="13" y="10" width="2" height="4" fill="#bae6fd" />
+                  <rect x="9" y="16" width="6" height="2" fill="#0369a1" />
+
+                  <!-- Right Tag > -->
+                  <rect x="17" y="7" width="2" height="2" fill="#f97316" />
+                  <rect x="19" y="9" width="2" height="2" fill="#f97316" />
+                  <rect x="20" y="11" width="2" height="2" fill="#f97316" />
+                  <rect x="19" y="13" width="2" height="2" fill="#f97316" />
+                  <rect x="17" y="15" width="2" height="2" fill="#f97316" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">HTML &amp; CSS</h3>
+                <span class="skill-role-caption">Semantic HTML5 &bull; CSS3 &bull; a11y</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Crafting bulletproof responsive layouts, accessible semantic architectures (ARIA), custom CSS properties,
+              fluid animations, and pixel-perfect design systems.
+            </p>
+
+            <!-- Progress Bar representing HTML & CSS mastery (97%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="97">97%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" aria-label="HTML and CSS Mastery 97%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 97%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of modern CSS and HTML standards -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="HTML and CSS standards">
+                <li class="pixel-badge-tag">Semantic HTML5</li>
+                <li class="pixel-badge-tag">CSS Grid</li>
+                <li class="pixel-badge-tag">Flexbox</li>
+                <li class="pixel-badge-tag">CSS Variables</li>
+                <li class="pixel-badge-tag">Animations</li>
+                <li class="pixel-badge-tag">WCAG 2.1 AA</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">STANDARD: W3C Validated</span>
+              <span class="footer-spec-rating">RATING: S+</span>
+            </div>
+          </article>
+
+
+          <!-- ================================================== -->
+          <!-- SKILL 8: GIT & GITHUB                              -->
+          <!-- Role: Version control workflows, branching models, -->
+          <!-- rebase, pull requests, and GitHub Actions CI/CD.   -->
+          <!-- Progress Bar: Represents version control mastery(94%)-->
+          <!-- Icon: Pixel art branching tree with commit nodes.  -->
+          <!-- List: Key collaboration and DevOps automation tools-->
+          <!-- ================================================== -->
+          <article class="pixel-skill-card" data-category="web-tools" data-skill="git-github" tabindex="0">
+            <div class="pixel-card-header">
+              <span class="skill-domain-pill">VERSION CONTROL &amp; CI/CD</span>
+              <span class="skill-lvl-badge">LVL 94</span>
+            </div>
+
+            <div class="skill-title-block">
+              <!-- Pixel Art Icon for Git & GitHub: Branching commit tree with merge node -->
+              <div class="pixel-icon-container" aria-hidden="true" title="Git & GitHub Pixel Icon">
+                <svg class="pixel-svg-icon" viewBox="0 0 24 24" width="36" height="36" shape-rendering="crispEdges">
+                  <!-- Main trunk branch line -->
+                  <rect x="6" y="4" width="2" height="16" fill="#f43f5e" />
+
+                  <!-- Feature branch curved split -->
+                  <path d="M7 8h4v2h2v2h2v6h-2v-4h-2v-2h-4z" fill="#ec4899" />
+
+                  <!-- Merge connector back to trunk -->
+                  <rect x="13" y="16" width="3" height="2" fill="#ec4899" />
+                  <rect x="9" y="17" width="5" height="2" fill="#f43f5e" />
+
+                  <!-- Commit Node 1 (Root) -->
+                  <rect x="4" y="4" width="6" height="4" fill="#fb7185" />
+                  <rect x="5" y="5" width="4" height="2" fill="#ffffff" />
+
+                  <!-- Commit Node 2 (Feature Branch) -->
+                  <rect x="13" y="12" width="6" height="4" fill="#a855f7" />
+                  <rect x="14" y="13" width="4" height="2" fill="#ffffff" />
+
+                  <!-- Commit Node 3 (Main Trunk Merge) -->
+                  <rect x="4" y="16" width="6" height="4" fill="#fb7185" />
+                  <rect x="5" y="17" width="4" height="2" fill="#ffffff" />
+                </svg>
+              </div>
+              <div class="skill-name-meta">
+                <h3 class="skill-card-name">Git &amp; GitHub</h3>
+                <span class="skill-role-caption">Git Flow &bull; CI/CD &bull; Collaboration</span>
+              </div>
+            </div>
+
+            <p class="skill-card-summary">
+              Strict version hygiene: interactive rebasing, trunk-based delivery, semantic versioning,
+              and automated testing pipelines with GitHub Actions.
+            </p>
+
+            <!-- Progress Bar representing Git & GitHub mastery (94%) -->
+            <div class="skill-xp-meter-group">
+              <div class="xp-meta-row">
+                <span class="xp-meta-label"><span class="pixel-glyph">★</span> MASTERY EXP</span>
+                <span class="xp-meta-percent" data-target="94">94%</span>
+              </div>
+              <div class="pixel-gauge-track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="Git and GitHub Mastery 94%">
+                <div class="pixel-gauge-fill" style="--skill-fill: 94%;"></div>
+                <div class="pixel-gauge-notches" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Styled list of Git and GitHub capabilities -->
+            <div class="skill-tools-box">
+              <span class="tools-box-label">KEY ECOSYSTEM TOOLS:</span>
+              <ul class="pixel-badge-list" aria-label="Git and GitHub competencies">
+                <li class="pixel-badge-tag">GitHub Actions</li>
+                <li class="pixel-badge-tag">Interactive Rebase</li>
+                <li class="pixel-badge-tag">Branching Strategy</li>
+                <li class="pixel-badge-tag">Code Review / PRs</li>
+                <li class="pixel-badge-tag">Git Hooks</li>
+                <li class="pixel-badge-tag">Semantic Releases</li>
+              </ul>
+            </div>
+
+            <div class="skill-card-footer">
+              <span class="footer-spec-tag">WORKFLOW: Trunk &bull; GitHub Actions</span>
+              <span class="footer-spec-rating">RATING: S+</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- TIMELINE SECTION: EDUCATION & KEY MILESTONES           -->
+    <!-- Visually engaging, minimalistic rounded cards with     -->
+    <!-- smooth hover transitions and theme coherence.          -->
+    <!-- ====================================================== -->
+    <section id="timeline" class="timeline-section" aria-labelledby="timeline-title">
+      <div class="container">
+
+        <!-- Timeline Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">
+            <span class="pixel-blink-dot" aria-hidden="true"></span>
+            ACADEMIC JOURNEY // MILESTONES
+          </span>
+          <h2 id="timeline-title" class="section-title">Education &amp; Key Milestones</h2>
+          <div class="section-divider pixel-section-divider"></div>
+          <p class="timeline-intro-desc">
+            A chronological timeline of my academic milestones, institutions, and ongoing engineering journey.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+
+          <!-- Milestone 1: 10th Standard at SDRHS Guddadaneralakere (2023) -->
+          <article class="timeline-item timeline-item-completed">
+            <div class="timeline-dot-pin" aria-hidden="true">
+              <span class="dot-inner"></span>
+              <span class="dot-pulse-ring"></span>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">SECONDARY SCHOOL</span>
+                <span class="timeline-date-badge">2023</span>
+              </div>
+
+              <div class="timeline-body">
+                <div class="timeline-title-row">
+                  <div class="timeline-icon-box" aria-hidden="true">
+                    <!-- School Book / Medal SVG Icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="timeline-event-title">10th Standard (SSLC)</h3>
+                    <div class="timeline-institution">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>SDRHS, Guddadaneralakere</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="timeline-description">
+                  Successfully completed secondary school education with strong foundations in mathematics, physical sciences,
+                  and early computing fundamentals, sparking a lifelong curiosity for technology and engineering.
+                </p>
+
+                <div class="timeline-footer-meta">
+                  <ul class="timeline-tags-list" aria-label="Key subjects and achievements">
+                    <li class="timeline-tag">SSLC (10th)</li>
+                    <li class="timeline-tag">Mathematics &amp; Science</li>
+                    <li class="timeline-tag">Guddadaneralakere</li>
+                  </ul>
+                  <span class="timeline-status-tag status-completed">
+                    <span class="status-check-glyph">✓</span> COMPLETED 2023
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 2: 12th Standard (PUC) at SRS PU College Chitradurga (2025) -->
+          <article class="timeline-item timeline-item-completed">
+            <div class="timeline-dot-pin" aria-hidden="true">
+              <span class="dot-inner"></span>
+              <span class="dot-pulse-ring"></span>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill">PRE-UNIVERSITY</span>
+                <span class="timeline-date-badge">2023 - 2025</span>
+              </div>
+
+              <div class="timeline-body">
+                <div class="timeline-title-row">
+                  <div class="timeline-icon-box" aria-hidden="true">
+                    <!-- Science & Analytical Icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="timeline-event-title">12th Standard / Pre-University (PUC)</h3>
+                    <div class="timeline-institution">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>SRS PU College, Chitradurga</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="timeline-description">
+                  Completed senior secondary pre-university coursework with rigorous academic focus on analytical science,
+                  mathematical modeling, and scientific inquiry, preparing the path for higher engineering studies.
+                </p>
+
+                <div class="timeline-footer-meta">
+                  <ul class="timeline-tags-list" aria-label="Key subjects and achievements">
+                    <li class="timeline-tag">PUC (12th)</li>
+                    <li class="timeline-tag">Science Stream</li>
+                    <li class="timeline-tag">Chitradurga</li>
+                  </ul>
+                  <span class="timeline-status-tag status-completed">
+                    <span class="status-check-glyph">✓</span> COMPLETED 2025
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Milestone 3: B.E. at AIT Chikkamagaluru (Current - Graduating 2029) -->
+          <article class="timeline-item timeline-item-current">
+            <div class="timeline-dot-pin dot-active" aria-hidden="true">
+              <span class="dot-inner"></span>
+              <span class="dot-pulse-ring active-ring"></span>
+            </div>
+
+            <div class="timeline-card card-current">
+              <div class="timeline-card-header">
+                <span class="timeline-phase-pill pill-active">UNDERGRADUATE DEGREE</span>
+                <span class="timeline-date-badge badge-active">2025 - 2029 (EXPECTED)</span>
+              </div>
+
+              <div class="timeline-body">
+                <div class="timeline-title-row">
+                  <div class="timeline-icon-box icon-active" aria-hidden="true">
+                    <!-- Engineering / Tech CPU Icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="timeline-event-title">Bachelor of Engineering (B.E.)</h3>
+                    <div class="timeline-institution">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Adichunchanagiri Institute of Technology (AIT), Chikkamagaluru</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="timeline-description">
+                  Currently pursuing undergraduate engineering studies with keen dedication. Focusing on software engineering principles,
+                  data structures, artificial intelligence, scalable systems, and hands-on production web technologies.
+                </p>
+
+                <div class="timeline-footer-meta">
+                  <ul class="timeline-tags-list" aria-label="Key subjects and focus areas">
+                    <li class="timeline-tag">Engineering (B.E.)</li>
+                    <li class="timeline-tag">Software Engineering</li>
+                    <li class="timeline-tag">Chikkamagaluru</li>
+                    <li class="timeline-tag tag-highlight">Graduating 2029</li>
+                  </ul>
+                  <span class="timeline-status-tag status-active">
+                    <span class="status-live-dot" aria-hidden="true"></span> CURRENT ENROLLMENT
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PLACEHOLDER: PROJECTS SECTION                          -->
+    <!-- Showcase of engineering projects, architecture, repos  -->
+    <!-- ====================================================== -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio</span>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1 Placeholder -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta">
+                <span class="project-category">Distributed Systems</span>
+                <span class="project-status">Production</span>
+              </div>
+              <h3 class="project-title">StreamWeaver</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-description">
+                A lightweight, zero-dependency streaming log aggregator built with Go and WebSockets. Handles 100k+
+                concurrent connections
+                with minimal memory footprint and real-time visualization.
+              </p>
+              <ul class="project-tags">
+                <li>Go</li>
+                <li>WebSockets</li>
+                <li>Redis Pub/Sub</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                aria-label="View StreamWeaver Source on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo" aria-label="Live Demo for StreamWeaver">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 Placeholder -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta">
+                <span class="project-category">Cloud Infrastructure</span>
+                <span class="project-status">Open Source</span>
+              </div>
+              <h3 class="project-title">KubePulse CLI</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-description">
+                Interactive terminal-based Kubernetes cluster health monitor with anomaly detection and automated
+                remediation suggestions.
+                Features an intuitive TUI built with Rust.
+              </p>
+              <ul class="project-tags">
+                <li>Rust</li>
+                <li>Kubernetes API</li>
+                <li>Ratatui</li>
+                <li>Prometheus</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                aria-label="View KubePulse Source on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo" aria-label="Docs for KubePulse">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Docs
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Card 3 Placeholder -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta">
+                <span class="project-category">Full-Stack Application</span>
+                <span class="project-status">Featured</span>
+              </div>
+              <h3 class="project-title">SchemaSync</h3>
+            </div>
+            <div class="project-card-body">
+              <p class="project-description">
+                Database schema drift detector and CI/CD migration validator. Automatically checks pull requests for
+                breaking schema changes
+                and suggests zero-downtime execution strategies.
+              </p>
+              <ul class="project-tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>PostgreSQL</li>
+                <li>GitHub Apps API</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link"
+                aria-label="View SchemaSync on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo" aria-label="Live Demo for SchemaSync">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- PLACEHOLDER: TESTIMONIALS SECTION                      -->
+    <!-- Peer recommendations, client feedback & collaboration -->
+    <!-- ====================================================== -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-subtitle">Endorsements</span>
+          <h2 id="testimonials-title" class="section-title">Testimonials</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Kavana is an exceptional engineer who seamlessly bridges the gap between deep infrastructure complexity
+              and fluid interactive experiences. Her systems thinking elevated our entire engineering workflow."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-avatar-pixel">✦</span>
+              <div>
+                <h4 class="author-name">Marcus Vance</h4>
+                <span class="author-role">VP of Engineering, Nexus Cloud</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Working with Kavana on high-throughput microservices was a masterclass in clean architecture. She is
+              reliable, passionate about performance, and ships production code with zero compromises."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-avatar-pixel">✦</span>
+              <div>
+                <h4 class="author-name">Elena Rostova</h4>
+                <span class="author-role">Staff Distributed Systems Architect</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- ====================================================== -->
+    <!-- CHAT SECTION: INTERACTIVE AI PORTFOLIO ASSISTANT       -->
+    <!-- Allows visitors to converse with an AI digital twin     -->
+    <!-- of Kavana regarding skills, education, and projects.    -->
+    <!-- ====================================================== -->
+    <section id="chat" class="chat-section" aria-labelledby="chat-title">
+      <div class="container">
+
+        <!-- Chat Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">
+            <span class="pixel-blink-dot" aria-hidden="true"></span>
+            VIRTUAL EMULATOR // INTERACTIVE AI CONVERSATION
+          </span>
+          <h2 id="chat-title" class="section-title">Chat with AI Kavana</h2>
+          <div class="section-divider pixel-section-divider"></div>
+          <p class="chat-intro-desc">
+            Interact with my AI digital twin in real-time. Inquire about my core software engineering skills,
+            academic journey at AIT Chikkamagaluru, past projects, or collaboration opportunities.
+          </p>
+        </div>
+
+        <!-- Chat Window Interface -->
+        <div class="chat-terminal-container" role="region" aria-label="Interactive AI Chat Window">
+
+          <!-- Terminal Title Bar -->
+          <div class="chat-terminal-header">
+            <div class="chat-header-left">
+              <div class="chat-avatar-mini" aria-hidden="true">
+                <img src="p kavana - Copy (5).jpeg" alt="AI Kavana Avatar" class="chat-avatar-img">
+                <span class="chat-status-pip"></span>
+              </div>
+              <div class="chat-header-titles">
+                <div class="chat-title-row">
+                  <span class="chat-terminal-title">AI KAVANA // VIRTUAL EMULATOR</span>
+                  <span class="chat-badge-model">GPT-EMU v2.6</span>
+                </div>
+                <span class="chat-status-text">STATUS: ONLINE &bull; READY TO CONVERSE</span>
+              </div>
+            </div>
+
+            <div class="chat-header-actions">
+              <span class="chat-latency" title="Simulated round-trip latency">LATENCY: 12ms</span>
+              <button type="button" id="chat-reset-btn" class="chat-reset-btn" title="Clear chat history and reset conversation">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                <span>RESET</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Message Display Area -->
+          <div class="chat-messages-box" id="chat-messages" role="log" aria-live="polite" aria-label="Conversation message history">
+
+            <!-- Initial Greeting from AI Persona -->
+            <div class="chat-bubble bot-bubble">
+              <div class="bubble-header-meta">
+                <span class="bubble-sender">[AI_KAVANA]</span>
+                <span class="bubble-timestamp" data-initial-time="true">Just now</span>
+              </div>
+              <div class="bubble-content-text">
+                <p>
+                  👋 Hi there! I'm <strong>AI Kavana</strong>, the interactive digital assistant representing Kavana.
+                </p>
+                <p>
+                  I can tell you about my <strong>8 core skills</strong> (Python, Java, AI, ML, SQL, DSA, HTML/CSS, Git),
+                  my <strong>educational milestones</strong> (including my ongoing engineering studies at <strong>AIT Chikkamagaluru</strong>),
+                  or projects like <strong>StreamWeaver</strong>. What would you like to know?
+                </p>
+              </div>
+            </div>
+
+            <!-- Suggested Quick Icebreaker Prompt Chips -->
+            <div class="chat-quick-prompts" id="chat-quick-prompts" aria-label="Quick suggested questions">
+              <span class="prompts-heading" aria-hidden="true">TRY ASKING:</span>
+              <button class="prompt-chip" type="button" data-prompt="What are your core technical skills?">
+                ✦ Core Skills &amp; Languages
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="Tell me about your education at AIT and PUC">
+                ✦ Education &amp; AIT Timeline
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="What projects have you built?">
+                ✦ Featured Projects
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="What is your background with Python and Java?">
+                ✦ Python &amp; Java Experience
+              </button>
+              <button class="prompt-chip" type="button" data-prompt="Are you available for engineering roles?">
+                ✦ Availability &amp; Hire
+              </button>
+            </div>
+
+            <!-- Dynamic Typing Indicator (Hidden by default, shown while bot is thinking) -->
+            <div id="chat-typing-indicator" class="chat-bubble bot-bubble chat-typing-bubble" style="display: none;" aria-hidden="true">
+              <span class="bubble-sender">[AI_KAVANA]</span>
+              <div class="typing-indicator-row">
+                <div class="typing-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="typing-label">AI Kavana is thinking...</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Input Field & Sending Controls -->
+          <form id="chat-input-form" class="chat-input-bar" aria-label="Send message to AI Kavana">
+            <div class="input-field-wrapper">
+              <input type="text" id="chat-user-input" class="chat-text-input"
+                placeholder="Ask AI Kavana about skills, education at AIT, projects, or hire..."
+                aria-label="Type message in chat terminal" autocomplete="off" required>
+            </div>
+            <button type="submit" id="chat-send-btn" class="chat-send-btn" aria-label="Send message">
+              <span>SEND</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Terminal Footer Status Bar -->
+          <div class="chat-terminal-footer">
+            <span class="chat-hint">💡 Press <strong>Enter</strong> to send &bull; Responses generated by simulated neural emulator</span>
+            <span class="chat-mode-tag">READY FOR OPENAI API EXPANSION</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- CONTACT SECTION: TRANSMISSION CONSOLE & DIRECT REACH   -->
+    <!-- Dedicated outreach hub with high-contrast form,        -->
+    <!-- email-sending integration blueprint (Resend API),      -->
+    <!-- and interactive in-UI success confirmation message.    -->
+    <!-- ====================================================== -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-subtitle">
+            <span class="pixel-prefix">[ TELECOM // TRANSMISSION LINK ]</span>
+          </span>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Have a project, internship opportunity, or AI/ML collaboration in mind?
+            Send a transmission or reach out through direct channels.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+
+          <!-- Left Column: Direct Contact Info & Telemetry Cards -->
+          <div class="contact-info">
+            <div class="contact-info-header">
+              <span class="contact-badge-pill">
+                <span class="status-pulse-dot"></span>
+                <span>OPEN FOR COLLABORATIONS</span>
+              </span>
+              <h3 class="contact-info-title">Let's build something impactful together.</h3>
+              <p class="contact-info-text">
+                I am an Artificial Intelligence & Machine Learning engineering student at AIT Chikkamagaluru
+                (Graduating 2029). Whether you are looking for an ambitious intern, research teammate, or
+                creative collaborator, I am always excited to connect!
+              </p>
+            </div>
+
+            <div class="contact-details-list">
+              <!-- Direct Email Item -->
+              <div class="contact-detail-card" id="contact-email-card">
+                <div class="contact-card-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-detail-label">Direct Email</span>
+                  <a href="mailto:kavanaaiml2@gmail.com" class="contact-detail-value" title="Send email to Kavana">
+                    kavanaaiml2@gmail.com
+                  </a>
+                </div>
+                <button type="button" class="contact-copy-btn" data-copy="kavanaaiml2@gmail.com" aria-label="Copy Email Address" title="Copy to clipboard">
+                  <span class="copy-label">Copy</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Direct Phone Item -->
+              <div class="contact-detail-card" id="contact-phone-card">
+                <div class="contact-card-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-detail-label">Phone & WhatsApp</span>
+                  <a href="tel:+919731749122" class="contact-detail-value" title="Call or WhatsApp Kavana">
+                    +91 9731749122
+                  </a>
+                </div>
+                <button type="button" class="contact-copy-btn" data-copy="9731749122" aria-label="Copy Phone Number" title="Copy to clipboard">
+                  <span class="copy-label">Copy</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location & Institute -->
+              <div class="contact-detail-card">
+                <div class="contact-card-icon-wrap" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-detail-label">Location / Institute</span>
+                  <span class="contact-detail-value">AIT Chikkamagaluru, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Telemetry Specs Box -->
+            <div class="contact-telemetry-box">
+              <div class="telemetry-item">
+                <span class="telemetry-label">Response Protocol</span>
+                <span class="telemetry-value text-accent">&lt; 24 Hours</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-label">Time Zone</span>
+                <span class="telemetry-value">IST (UTC +5:30)</span>
+              </div>
+              <div class="telemetry-item">
+                <span class="telemetry-label">Status</span>
+                <span class="telemetry-value telemetry-online">● Online & Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form & Confirmation Card -->
+          <div class="contact-form-container">
+
+            <!-- Cyber / Pixel Header Bar -->
+            <div class="contact-form-topbar">
+              <div class="topbar-dots" aria-hidden="true">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="topbar-title">TRANSMISSION_UPLINK // SECURE</div>
+              <div class="topbar-status">STATUS: READY</div>
+            </div>
+
+            <!-- ========================================================================= -->
+            <!-- EMAIL SERVICE INTEGRATION NOTICE (e.g., Resend API, Formspree, Serverless) -->
+            <!-- To connect this form directly to Resend API:                              -->
+            <!-- 1. Endpoint: POST https://api.resend.com/emails                           -->
+            <!-- 2. Auth: Authorization: Bearer <RESEND_API_KEY>                           -->
+            <!-- 3. Payload: { from: '...', to: ['kavanaaiml2@gmail.com'], subject, html } -->
+            <!-- Detailed JavaScript fetch implementation is located in script.js!         -->
+            <!-- ========================================================================= -->
+            <form class="contact-form" id="contact-form" novalidate>
+
+              <!-- Field 1: Name -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  <span class="label-text">Your Name</span>
+                  <span class="label-required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Alex Sharma"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Field 2: Email Address -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  <span class="label-text">Email Address</span>
+                  <span class="label-required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="e.g. alex@example.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Field 3: Message -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  <span class="label-text">Your Message</span>
+                  <span class="label-required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    class="form-textarea"
+                    placeholder="Tell me about your project, engineering inquiry, or opportunity..."
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </div>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <!-- High Contrast Submit Button -->
+              <div class="form-actions">
+                <button type="submit" id="contact-submit-btn" class="btn-submit-contact" aria-label="Send Message to Kavana">
+                  <span class="btn-content-default">
+                    <span>Send Message</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </span>
+                  <span class="btn-content-loading" aria-hidden="true">
+                    <span class="pixel-spinner"></span>
+                    <span>Transmitting...</span>
+                  </span>
+                </button>
+              </div>
+
+              <div class="form-privacy-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Direct delivery to <strong>kavanaaiml2@gmail.com</strong>. No spam, ever.</span>
+              </div>
+            </form>
+
+            <!-- In-UI Confirmation Card (Displayed upon successful submission) -->
+            <div id="contact-confirmation" class="contact-confirmation-card" hidden role="alert" aria-live="polite">
+              <div class="confirmation-badge" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+
+              <span class="confirmation-tag">TRANSMISSION CONFIRMED</span>
+              <h3 class="confirmation-title">Message Delivered Successfully!</h3>
+
+              <p class="confirmation-message">
+                Thank you, <strong id="confirmed-sender-name">there</strong>! Your message has been safely received.
+                A notification has been sent to <strong>kavanaaiml2@gmail.com</strong>.
+                Kavana will review your inquiry and get back to your email (<span id="confirmed-sender-email" class="confirmed-email-pill">your email</span>) soon!
+              </p>
+
+              <div class="confirmation-telemetry">
+                <div class="telemetry-row">
+                  <span class="telemetry-key">Status:</span>
+                  <span class="telemetry-val text-success">✓ 200 OK — Queued for Delivery</span>
+                </div>
+                <div class="telemetry-row">
+                  <span class="telemetry-key">Recipient:</span>
+                  <span class="telemetry-val">kavanaaiml2@gmail.com</span>
+                </div>
+                <div class="telemetry-row">
+                  <span class="telemetry-key">Phone / Contact:</span>
+                  <span class="telemetry-val">+91 9731749122</span>
+                </div>
+                <div class="telemetry-row">
+                  <span class="telemetry-key">Timestamp:</span>
+                  <span class="telemetry-val" id="confirmed-timestamp">Just now</span>
+                </div>
+              </div>
+
+              <button type="button" id="contact-reset-btn" class="btn-reset-contact" aria-label="Send another message">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <polyline points="23 20 23 14 17 14"></polyline>
+                  <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                </svg>
+                <span>Send Another Message</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- Semantic footer with copyright, links, and back-to-top   -->
+  <!-- ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-left">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Kavana. All rights reserved.
+        </p>
+        <p class="footer-subtext">Designed with semantic HTML5, modern CSS, and clean code principles.</p>
+      </div>
+
+      <!-- Quick Footer Links -->
+      <div class="footer-links">
+        <a href="mailto:kavanaaiml2@gmail.com" class="footer-contact-link" title="Direct Email">kavanaaiml2@gmail.com</a>
+        <span class="footer-dot-sep" aria-hidden="true">•</span>
+        <a href="tel:+919731749122" class="footer-contact-link" title="Direct Phone">+91 9731749122</a>
+        <span class="footer-dot-sep" aria-hidden="true">•</span>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to Top">
+          Back to Top &uarr;
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script for Theme Toggle & Interactive Enhancements -->
+  <script src="script.js"></script>
+</body>
+
+</html>
